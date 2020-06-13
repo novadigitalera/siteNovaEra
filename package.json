@@ -6,9 +6,10 @@
     "server": "node server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
-  "dependencies": {
-    "express": "^4.16.2"
-  },
+  //"dependencies": {
+  //  "express": "^4.16.2"
+  //},
+  //
   "devDependencies": {
     "concurrently": "^3.5.0"
   }
