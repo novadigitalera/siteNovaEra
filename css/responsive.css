@@ -232,6 +232,10 @@
   .pri_table_list {
     margin-bottom: 30px;
   }
+  .single-awesome-articles{
+    width: 50%;
+    float: none;
+  }
   .single-awesome-project, .portfolio-2 .single-awesome-project {
     width: 100%;
     float: none;
