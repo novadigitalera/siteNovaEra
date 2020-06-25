@@ -264,7 +264,7 @@ div#preloader {
   left: 0;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.40);
+  background: rgba(0, 0, 0, 0.80);
   z-index: 9;
 }
 
@@ -411,7 +411,13 @@ div#preloader {
   font-size: 36px;
   font-weight: bold;
   line-height: 1;
+  
 }
+.sticky-logo img {
+  height: 47px;  
+  margin-top:-6px;
+}
+
 
 .sticky-logo h1 span {
   color: #3ec1d5;
