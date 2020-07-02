@@ -211,6 +211,16 @@ div#preloader {
   text-shadow: none;
 }
 
+::-moz-selection-buy {
+  background:  #78d53e;
+  text-shadow: none;
+}
+
+::selection-buy {
+  background: #78d53e;
+  text-shadow: none;
+}
+
 .area-padding {
   padding: 70px 0px 80px;
 }
