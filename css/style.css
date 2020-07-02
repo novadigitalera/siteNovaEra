@@ -2383,7 +2383,7 @@ span.email-notes {
 }
 
 
-.button-comprar{
+.button-comprar:hover{
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: 1px solid #ccc;
   color: #fff;
