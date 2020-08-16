@@ -646,11 +646,37 @@
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="text" id="text" rows="5" data-rule="required" data-msg="" placeholder="text"></textarea>
                   <div class="validation"></div>
                 </div>
                 <div class="text-center"><button type="submit">Enviar mensagem</button></div>
               </form>
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+              <script>
+                $("form").on("submit", e => {
+                  e.preventDefault();
+          
+                  const email = $("#email").val().trim();
+                  const subject = $("#subject").val().trim();
+                  const text = $("#text").val().trim();
+          
+                  const data = {
+                    email,
+                    subject,
+                    text
+                  };
+          
+                  $.post("localhost:5000/email", data)
+                    .done(() => {
+                      alert("E-mail enviado com sucesso!")
+                    })
+                    .fail(err => {
+                      alert("Falha ao enviar e-mail - " + err);
+                    });
+                });
+              </script>
+
             </div>
           </div>
           <!-- End Left contact -->
