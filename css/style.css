@@ -755,6 +755,15 @@ div#preloader {
   background-attachment: fixed;
 }
 
+.testemunhas-area {
+  background: rgba(248, 248, 248, 0.8) url("../img/background/banner.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
 .well-bg {
   position: relative;
 }
