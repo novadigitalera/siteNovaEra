@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -729,7 +730,7 @@
             <div class="form contact-form">
               <div id="sendmessage">Sua mensagem foi enviada. Obrigado!</div>
               <div id="errormessage"></div>
-              <form action="mailto:contato@diretoriadigital.com" method="post" role="form" class="contactForm">
+              <form action="#" method="post" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nome completo" data-rule="minlen:4" data-msg="É necessário preencher pelo menos 4 caracteres" />
                   <div class="validation"></div>
@@ -753,6 +754,7 @@
               <script>
                 $("form").on("submit", e => {
                   e.preventDefault();
+                  
           
                   const email = $("#email").val().trim();
                   const subject = $("#subject").val().trim();
@@ -764,7 +766,9 @@
                     text
                   };
           
-                  $.post("localhost:5000/email", data)
+
+                  console.log("teste de envio de email "+ data.email);
+                  $.post("http://localhost:5000/email", data)
                     .done(() => {
                       alert("E-mail enviado com sucesso!")
                     })
